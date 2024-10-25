@@ -1,4 +1,4 @@
-from utils.api_client import client
+from lesson1.api_tests.utils.api_client import client
 
 
 def create_case(json={}):
