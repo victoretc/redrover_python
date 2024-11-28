@@ -1,6 +1,6 @@
-from services.case.pom import create_case
-from services.case.data import create_case_dict
-from services.case.models import Case
+from lesson1.api_tests.services.case.pom import create_case
+from lesson1.api_tests.services.case.data import create_case_dict
+from lesson1.api_tests.services.case.models import Case
 
 
 def test_create_case():

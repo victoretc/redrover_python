@@ -10,13 +10,13 @@ class APIResponse:
 
     def status_code_should_be_eq(self, expected_status):
         assert (
-            self.response.status_code == expected_status
+                self.response.status_code == expected_status
         ), f"Ожидали {expected_status}, но получили {self.response.status_code}"
         return self
 
     def len_of_json_should_be_eq(self, expected_len):
         assert (
-            len(self.response.json()) == expected_len
+                len(self.response.json()) == expected_len
         ), f"Ожидали {expected_len}, но получили {len(self.response.json())}"
         return self
 
@@ -116,6 +116,6 @@ class APIResponse:
 
     def should_be_eq(self, expected_value):
         assert (
-            self._current_value == expected_value
+                self._current_value == expected_value
         ), f"Ожидали {expected_value}, но получили {self._current_value}"
         return self
