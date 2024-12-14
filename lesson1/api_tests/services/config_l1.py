@@ -1,7 +1,7 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
-class Settings(BaseSettings):
+class SettingsL1(BaseSettings):
     base_url: str = "http://localhost:8000"
 
     class ConfigDict(SettingsConfigDict):
@@ -9,4 +9,4 @@ class Settings(BaseSettings):
         env_file_encoding = "utf-8"
 
 
-settings = Settings()
+settings = SettingsL1()

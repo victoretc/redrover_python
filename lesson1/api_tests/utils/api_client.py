@@ -3,7 +3,7 @@ import json
 import allure
 import requests
 from allure_commons.types import AttachmentType
-from lesson1.api_tests.services.config import settings
+from lesson1.api_tests.services.config_l1 import settings
 from curlify2 import Curlify  # Curlify2 работает и с httpx и с requests.
 from loguru import logger
 from requests import Response

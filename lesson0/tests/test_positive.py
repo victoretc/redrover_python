@@ -12,9 +12,9 @@ single_user_response = {
         "avatar": "https://reqres.in/img/faces/2-image.jpg",
     },
     "support": {
-        "url": "https://reqres.in/#support-heading",
-        "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
-    },
+        "url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",#"https://reqres.in/#support-heading",
+        "text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",#"To keep ReqRes free, contributions towards server costs are appreciated!",
+    }
 }
 
 
@@ -54,6 +54,7 @@ def test_register():
     # HTTPStatus.OK или 200
     should_be_equal(response.status_code, HTTPStatus.OK) 
     should_be_equal(response.json(), {"id": 4, "token": "QpwL5tke4Pnpja7X4"})
+
 
 # На данном этапе уже понятно, что тестовые данные стоит хранить отдельно от тестов.  
 list_of_users_response = {
@@ -106,8 +107,8 @@ list_of_users_response = {
         }
     ],
     "support": {
-        "url": "https://reqres.in/#support-heading",
-        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+        "url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",#"https://reqres.in/#support-heading",
+        "text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",#"To keep ReqRes free, contributions towards server costs are appreciated!",
     }
 }
 

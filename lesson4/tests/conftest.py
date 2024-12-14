@@ -13,7 +13,7 @@ def browser_management():
     browser.config.window_height = 1920
     browser.config.window_width = 1080
     browser.config.timeout = 6
-    browser.config.base_url = 'http://195.133.27.184'
+    browser.config.base_url = 'http://tester:dslfjsdfblkhew%40122b1klbfw@testing.misleplav.ru'
 
     browser.config._wait_decorator = support._logging.wait_with(
         context=allure_commons._allure.StepContext

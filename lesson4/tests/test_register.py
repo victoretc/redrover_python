@@ -1,14 +1,16 @@
 from faker import Faker
 fake = Faker()
-from components import header, register
-from core.settings import settings
+from lesson4.components import header, register
+from lesson4.core.settings import settings
+import  allure
 
+@allure.title("Регистрация")
 def test_register():
-    # main page 
+    # main page
     header.visit()
     header.should_be_opened()
     header.open_registration_component()
-    # register form 
+    # register form
     register.type_login(fake.user_name())
     register.type_password(settings.register_password)
     register.type_confirm_password(settings.register_password)
