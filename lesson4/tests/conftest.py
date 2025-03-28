@@ -2,11 +2,11 @@ import pytest
 from selene import browser, support
 from selenium import webdriver
 import allure_commons
-import allure 
+import allure
+
 
 @pytest.fixture(autouse=True)
 def browser_management():
-    
     options = webdriver.ChromeOptions()
     # options.add_argument('--headless')
     browser.config.driver_options = options
@@ -18,7 +18,7 @@ def browser_management():
     browser.config._wait_decorator = support._logging.wait_with(
         context=allure_commons._allure.StepContext
     )
-    
+
     yield
 
     allure.attach(

@@ -1,4 +1,8 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class Settings(BaseSettings):
@@ -12,3 +16,4 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
+# settings = Settings(base_url="http://195.133.27.184/", register_password="Pknewbkj1212234112****")

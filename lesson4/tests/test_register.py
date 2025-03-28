@@ -1,8 +1,12 @@
+from lesson4.components import header, register
+from lesson4.core.settings import settings
+import allure
 from faker import Faker
-fake = Faker()
-from components import header, register
-from core.settings import settings
 
+fake = Faker()
+
+
+@allure.title("Регистрация")
 def test_register():
     # main page 
     header.visit()
